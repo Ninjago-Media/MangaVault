@@ -10,9 +10,8 @@ dependencies = [
     "curl-cffi",
 ]
 
+[tool.uv]
+package = false
+
 [tool.vercel]
 entrypoint = "api:app"
-
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
