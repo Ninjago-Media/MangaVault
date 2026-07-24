@@ -1,2 +1,18 @@
+[project]
+name = "mangavault"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "requests",
+    "beautifulsoup4",
+    "curl-cffi",
+]
+
 [tool.vercel]
 entrypoint = "api:app"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
